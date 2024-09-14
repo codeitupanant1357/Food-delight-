@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Delight</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="main">
+            <h1>Foodie Delight</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#login">Login</a></li>
+                    <li><a href="#signup">Signup</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Experience Gourmet Delights</h2>
+                <p>Indulge in our exclusive menu with dishes crafted to perfection.</p>
+                <a href="#menu" class="cta-button">Order Now</a>
+            </div>
+        </section>
+
+        <section id="menu" class="menu">
+            <div class="main">
+                <h2>Our Menu</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="pizza.jpg" alt="Pizza">
+                        <h3>Pizza</h3>
+                        <p>Cheesy, delicious, and topped with fresh ingredients.</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="burger.jpg" alt="Burger">
+                        <h3>Burger</h3>
+                        <p>Juicy beef patty with crisp lettuce and tomato.</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="pasta.jpg" alt="Pasta">
+                        <h3>Pasta</h3>
+                        <p>Rich and creamy pasta with a variety of sauces.</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="shushi.jpg" alt="Sushi">
+                        <h3>Sushi</h3>
+                        <p>Fresh sushi rolls with a selection of fillings.</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="salad.jpg" alt="Salad">
+                        <h3>Salad</h3>
+                        <p>Fresh greens with a variety of toppings and dressings.</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="desert.jpg" alt="Dessert">
+                        <h3>Dessert</h3>
+                        <p>Decadent desserts to satisfy your sweet tooth.</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="tacos.jpg" alt="Tacos">
+                        <h3>Tacos</h3>
+                        <p>Spicy and flavorful tacos with your choice of fillings.</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="soup.jpg" alt="Soup">
+                        <h3>Soup</h3>
+                        <p>Hearty soups with rich, savory flavors.</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="order-summary" class="content-section">
+            <h2>Your Order</h2>
+            <div id="cart-items"></div>
+            <p>Total: <span id="total-cost">0.00</span></p>
+            <button id="checkout">Checkout</button>
+        </section>
+        
+        <section id="about" class="about">
+            <div class="main">
+                <h2>About Us</h2>
+                <p>At Foodie Delight, we are passionate about bringing you the best culinary experiences. Our team of expert chefs uses only the freshest ingredients to craft dishes that delight your taste buds. Whether you're craving a classic pizza, a juicy burger, or a creamy pasta, we have something for everyone.</p>
+                <p>Founded in 2020, our mission is to provide high-quality, delicious meals with exceptional service. We believe that food should be an experience, and we are committed to making every meal memorable.</p>
+            </div>
+        </section>
+        
+        <section id="contact" class="contact">
+            <div class="main">
+                <h2>Contact Us</h2>
+                <p>Have questions or need assistance? We're here to help!</p>
+                <p><strong>Email:</strong> support@foodiedelight.com</p>
+                <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                <p><strong>Address:</strong> 123 Flavor Street, Gourmet City, FC 12345</p>
+            </div>
+            <div class="contact">
+                <form action="#" method="post">
+                    <table>
+                        <td><label for="name">Name:</label></td>
+                        <td><input type="text" id="name" name="name" required></td>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email" required></td>
+                        <td><label for="message">Message:</label></td>
+                        <td><textarea id="message" name="message" required></textarea></td>
+                        <td><button type="submit">Send Message</td>
+                    </table>
+                </form>
+            </div>
+        </section>
+
+        <section id="login" class="auth">
+            <div class="main">
+                <h2>Login</h2>
+                <form action="#" method="post">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" name="login-email" required>
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" name="login-password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="signup" class="auth">
+            <div class="main">
+                <h2>Signup</h2>
+                <form action="#" method="post">
+                    <label for="signup-name">Name:</label>
+                    <input type="text" id="signup-name" name="signup-name" required>
+                    <label for="signup-email">Email:</label>
+                    <input type="email" id="signup-email" name="signup-email" required>
+                    <label for="signup-password">Password:</label>
+                    <input type="password" id="signup-password" name="signup-password" required>
+                    <button type="submit">Signup</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="main">
+            <p>Foodie Delight. All rights reserved.</p>
+        </div>
+        <div class="social-media">
+            <a href="#"><img src="https://image.shutterstock.com/image-vector/facebook-icon-vector-260nw-600845237.jpg" alt="Facebook"></a>
+            <a href="#"><img src="https://image.shutterstock.com/image-vector/instagram-icon-vector-260nw-600845242.jpg" alt="Instagram"></a>
+            <a href="#"><img src="https://image.shutterstock.com/image-vector/twitter-icon-vector-260nw-600845240.jpg" alt="Twitter"></a>
+        </div>
+    </footer>
+</body>
+  </html>
